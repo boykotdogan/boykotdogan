@@ -10,3 +10,4 @@ Yapılması gereken ufak tefek şeyler var, onları da ekleyebilirsek chrome web
 
 Her türlü destek ve öneriye açığız.
 
+boykotdogan@gmail.com
