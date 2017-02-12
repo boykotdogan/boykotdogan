@@ -1,2 +1,5 @@
-# boykotdogan
-Boykot Doğan Medya
+
+Boykot Doğan Medya Grubu
+=======
+
+Doğan Medya Grubunu boykot ediyoruz.
