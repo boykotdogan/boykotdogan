@@ -20,3 +20,10 @@ Installation
     cd boykotdogan
     chrome://extensions/
     Developer Mode -> Load unpacked extension 
+
+TODO 
+------------
+	Need to remove post id from url 
+	Content sites example: Remove -1276552 from http://www.fanatik.com.tr/2017/02/07/heat-ten-ust-uste-11-galibiyet-1276552
+	Hepsiburada example: Remove -v1-p-EAKSBYSSL201519 from http://www.hepsiburada.com/soley-cift-kisilik-nevresim-takimi-sakura-pudra-v1-p-EAKSBYSSL201519
+	Add toggle to popup.html
