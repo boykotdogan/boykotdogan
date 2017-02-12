@@ -5,12 +5,19 @@
 
 chrome.webRequest.onBeforeRequest.addListener(
     function(info) {
-      //console.log(info.url);
-     // location.replace('http://www.google.com');
-        //return {cancel: true};
-                 return {redirectUrl: "https://www.google.com.tr/search?q=do%C4%9Fan+medya+grubunu+boykot+ediyoruz"};
+        host="https://www.google.com.tr/search?q=";
 
-    //           return {redirectUrl: host + details.url.match(/^https?:\/\/[^\/]+([\S\s]*)/)[1]};
+        console.log("URL HERE");
+        console.log(info.url);
+
+        targeturl=info.url.match(/^https?:\/\/[^\/]+([\S\s]*)/);
+        searchparam=targeturl[1].split("/").join("").split("-c-").join("").split("-").join(" ")
+
+// TODO: Need to remove post id from url 
+// Content sites example: Remove -1276552 from http://www.fanatik.com.tr/2017/02/07/heat-ten-ust-uste-11-galibiyet-1276552
+// Hepsiburada example: Remove -v1-p-EAKSBYSSL201519 from http://www.hepsiburada.com/soley-cift-kisilik-nevresim-takimi-sakura-pudra-v1-p-EAKSBYSSL201519
+
+        return {redirectUrl: host + searchparam};
 
     },
     {
@@ -30,7 +37,7 @@ chrome.webRequest.onBeforeRequest.addListener(
         "*://*.dpc.com.tr/*",
         "*://*.ddt.com.tr/*",
         "*://*.dha.com.tr/*",
-        "*://*.kanald.com.tr*",
+        "*://*.kanald.com.tr/*",
         "*://*.cnnturk.com/*",
         "*://*.teve2.com.tr/*",
         "*://*.dreamtv.com.tr/*",
