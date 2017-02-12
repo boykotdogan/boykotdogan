@@ -17,7 +17,6 @@ Installation
 	Download 
 	veya
     git clone https://github.com/boykotdogan/boykotdogan
-    cd boykotdogan
     chrome://extensions/
     Developer Mode -> Load unpacked extension 
 
